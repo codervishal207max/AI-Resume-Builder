@@ -29,7 +29,7 @@ function Preview() {
   const generateContent = async (data) => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:8000/api/generate-resume', {
+      const res = await fetch('http://ai-resume-builder-n6ih.onrender.com/api/generate-resume', {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data),
       });
       const result = await res.json();
@@ -56,7 +56,7 @@ function Preview() {
 
   const handleDownload = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/download-pdf', {
+      const res = await fetch('http://ai-resume-builder-n6ih.onrender.com/api/download-pdf', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ resume, formData }),
       });

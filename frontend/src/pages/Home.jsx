@@ -86,7 +86,7 @@ function Home() {
       <footer className="footer">
         <div className="container">
           <p>
-            Built with ❤️ for IBM Edunet Foundation Internship · Vishal · SISTec-R Bhopal
+            Built with ❤️ for IBM Edunet Foundation Internship · Vishal Fulbandhe · SISTec-R Bhopal
             <br />
             <a href="https://github.com/codervishal207max" target="_blank" rel="noreferrer" style={{color:'#6c63ff', marginRight:'16px'}}>GitHub</a>
             <a href="https://www.linkedin.com/in/vishal-fulbandhe-16662832b" target="_blank" rel="noreferrer" style={{color:'#10d9a0'}}>LinkedIn</a>
