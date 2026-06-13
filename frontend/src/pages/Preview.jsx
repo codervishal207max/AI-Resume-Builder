@@ -64,9 +64,10 @@ function Preview() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url; a.download = `${resume?.name || 'resume'}_resume.pdf`; a.click();
-    } catch (err){
-      console.error('PDF download failed:',err);
+    } catch (err) {
+      console.error('PDF failed:',err);
     }
+   
   };
 
   if (loading) return (
