@@ -1,0 +1,26 @@
+.preview{padding:100px 0 60px;min-height:100vh;}
+.preview__header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;gap:20px;flex-wrap:wrap;}
+.preview__title{font-size:2rem;margin-top:10px;}
+.preview__actions{display:flex;gap:12px;align-items:center;margin-top:10px;}
+.preview__tabs{display:flex;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:0;}
+.preview__tab{padding:10px 24px;background:transparent;border:none;border-bottom:2px solid transparent;color:var(--text-secondary);font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:var(--transition);margin-bottom:-1px;}
+.preview__tab:hover{color:var(--text-primary);}
+.preview__tab.active{color:var(--accent);border-bottom-color:var(--accent);}
+.resume-doc{max-width:760px;margin:0 auto;padding:0;overflow:hidden;}
+.resume-doc__header{padding:32px 40px;text-align:center;}
+.resume-doc__name{font-size:2rem;color:#fff;margin-bottom:12px;}
+.resume-doc__contacts{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;color:rgba(255,255,255,0.8);font-size:13px;}
+.resume-doc__section{padding:0 40px;margin-bottom:24px;margin-top:24px;}
+.resume-doc__section-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border);}
+.resume-doc__entry{margin-bottom:14px;}
+.resume-doc__entry-header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:4px;}
+.resume-doc__entry-date{color:var(--text-muted);font-size:13px;}
+.resume-doc__entry-sub{color:var(--text-secondary);font-size:13px;margin-bottom:6px;}
+.resume-doc__project-title{color:var(--text-primary);display:block;margin-bottom:6px;}
+.resume-doc__text{color:var(--text-secondary);font-size:14px;line-height:1.7;}
+.resume-doc__skills{display:flex;flex-wrap:wrap;gap:8px;}
+.resume-doc__skill-tag{background:var(--bg-elevated);border:1px solid;color:var(--text-secondary);padding:4px 12px;border-radius:100px;font-size:12px;}
+.preview-loading{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;color:var(--text-secondary);padding-top:80px;}
+.preview-loading__spinner{width:48px;height:48px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+@media(max-width:640px){.resume-doc__header{padding:24px 20px;}.resume-doc__section{padding:0 20px;}.preview__header{flex-direction:column;}}

@@ -1,0 +1,12 @@
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 0;transition:all 0.3s ease;border-bottom:1px solid transparent;}
+.navbar--scrolled{background:rgba(10,10,15,0.85);backdrop-filter:blur(16px);border-bottom-color:var(--border);padding:14px 0;}
+.navbar__inner{display:flex;align-items:center;justify-content:space-between;}
+.navbar__logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.navbar__logo-icon{font-size:22px;}
+.navbar__logo-text{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:var(--text-primary);}
+.navbar__links{display:flex;align-items:center;gap:8px;}
+.navbar__link{text-decoration:none;color:var(--text-secondary);font-size:14px;font-weight:500;padding:8px 16px;border-radius:var(--radius-sm);transition:var(--transition);}
+.navbar__link:hover{color:var(--text-primary);background:var(--bg-elevated);}
+.navbar__link.active{color:var(--accent);background:var(--accent-soft);}
+.navbar__cta{text-decoration:none;font-size:13px;padding:10px 20px;}
+@media(max-width:640px){.navbar__links{display:none;}}
